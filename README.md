@@ -2,7 +2,7 @@
 
 This is the Python implementation of SFPCA: 
 > **Principal Component Analysis in Space Froms**\
-> Puoya Tabaghi*, Michael Khanzadeh*, Yusu Wang*, Siavash Mirarab\
+> Puoya Tabaghi, Michael Khanzadeh, Yusu Wang, Siavash Mirarab\
 > University of California San Diego\
 > Paper: 
 
