@@ -49,7 +49,7 @@ Outputs:
 ```
 #### 3. Compute output error
 ```
-noise_lvl_output = sfpca.compute_noise_lvl(X_,S)
+noise_lvl_output = sfpca.compute_H_noise_lvl(X_,S)
 # or
 noise_lvl_output = sfpca.compute_noise_lvl(X_,S)
 ```
