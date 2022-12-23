@@ -1,4 +1,3 @@
-# SFPCA
 # Space Form Principal Component Analysis
 
 This is the Python implementation of SFPCA: 
