@@ -22,7 +22,6 @@ parameters:
   param.d               dimension of affine subspace
   param.sigma           input noise level
 ```
-### Examples
 
 #### 1. Run HoroPCA on the smalltree dataset:
 ```
