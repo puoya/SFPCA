@@ -25,10 +25,13 @@ parameters:
 
 Outputs: 
 ```
+  X,S, noise_lvl_input = sfpca.random_hyperbolic_data(param) 
+  or 
+  X,S, noise_lvl_input = sfpca.random_spherical_data(param)
+  
   X                     a (D+1) by N matrix of data points 
   S                     the subspace class: contains the base point, tangent subspace, and the slice-unitary matrix
   noise_lvl_input       average distance between noisy input data and the true subspace 
-frechet_var: 	7.15 +- 0.00
 ```
 
 #### 2. Run Euclidean PCA on the smalltree dataset:
