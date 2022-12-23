@@ -33,8 +33,8 @@ def random_J_orthogonal_matrix(param):
     condition = True
     while condition:
         v = np.random.normal(0, 10, (D+1,1))
-        #v[0] = 100*np.random.normal(0, 1)
-        v[0] = np.sqrt(1+np.linalg.norm(v[1:D+1])**2)
+        v[0] = 100*np.random.normal(0, 1)
+        #v[0] = np.sqrt(1+np.linalg.norm(v[1:D+1])**2)
         norm_v = J_norm(v,D)
         if norm_v < 0:
             p = v/np.sqrt(-norm_v)
