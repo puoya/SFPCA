@@ -23,13 +23,11 @@ parameters:
   param.sigma           input noise level
 ```
 
-#### 1. Run HoroPCA on the smalltree dataset:
+Outputs: 
 ```
-python main.py --dataset smalltree --model horopca --dim 10 --n-components 2
-```
-Output: 
-```
-distortion: 	0.19 +- 0.00
+  X                     a (D+1) by N matrix of data points 
+  S                     the subspace class: contains the base point, tangent subspace, and the slice-unitary matrix
+  noise_lvl_input       average distance between noisy input data and the true subspace 
 frechet_var: 	7.15 +- 0.00
 ```
 
