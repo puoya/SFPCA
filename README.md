@@ -21,22 +21,10 @@ self.N = 1000 ## number of points
 python3 main.py 
 
 parameters:
-  param.N, --help            show this help message and exit
-  --dataset {smalltree,phylo-tree,bio-diseasome,ca-CSphd}
-                        which datasets to use
-  --model {pca,tpca,pga,bsa,hmds,horopca}
-                        which dimensionality reduction method to use
-  --metrics METRICS [METRICS ...]
-                        which metrics to use
-  --dim DIM             input embedding dimension to use
-  --n-components N_COMPONENTS
-                        number of principal components
-  --lr LR               learning rate to use for optimization-based methods
-  --n-runs N_RUNS       number of runs for optimization-based methods
-  --use-sarkar          use sarkar to embed the graphs
-  --sarkar-scale SARKAR_SCALE
-                        scale to use for embeddings computed with Sarkar's
-                        construction
+  param.N               number of data points
+  param.D               ambient dimension of space form
+  param.d               dimension of affine subspace
+  param.sigma           input noise level
 ```
 ### Examples
 
