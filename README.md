@@ -61,19 +61,3 @@ frechet_var:    0.34 +- 0.00
 ```
 
 
-### Datasets
-The possible dataset choices  in this repo are `{smalltree,phylo-tree,bio-diseasome,ca-CSphd}`.
-To add a new dataset, add the corresponding edge list and embedding file in the `data/` folder. 
-
-
-
-## Citation
-If you use this codebase, or otherwise found our work valuable, please cite:
-```
-@article{chami2021horopca,
-  title={HoroPCA: Hyperbolic Dimensionality Reduction via Horospherical Projections},
-  author={Chami, Ines and Gu, Albert and Nguyen, Dat and R{\'e}, Christopher},
-  journal={arXiv preprint arXiv:2106.03306},
-  year={2021}
-}
-```
