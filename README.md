@@ -12,11 +12,16 @@ This is the Python implementation of SFPCA:
 ### Example
 
 Refer to example.py for spherical and hyperbolic PCA examples on randonly generated data points.
+self.N = 1000 ## number of points
+        self.D = 10 ## input dimension
+        self.d = 1 ## target dimension
+        self.sigma = .01 #
+        
 ```
-python main.py --help
+python3 main.py 
 
-optional arguments:
-  -h, --help            show this help message and exit
+parameters:
+  param.N, --help            show this help message and exit
   --dataset {smalltree,phylo-tree,bio-diseasome,ca-CSphd}
                         which datasets to use
   --model {pca,tpca,pga,bsa,hmds,horopca}
