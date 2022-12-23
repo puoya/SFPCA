@@ -26,7 +26,7 @@ parameters:
 Outputs: 
 ```
   X,S, noise_lvl_input = sfpca.random_hyperbolic_data(param) 
-  or 
+  #or 
   X,S, noise_lvl_input = sfpca.random_spherical_data(param)
   
   X                     a (D+1) by N matrix of data points 
