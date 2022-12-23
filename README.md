@@ -14,7 +14,7 @@ This is the Python implementation of SFPCA:
 Refer to example.py for spherical and hyperbolic PCA examples on randonly generated data points.
 
 ```
-python3 main.py 
+python3 example.py 
 
 parameters:
   param.N               number of data points
