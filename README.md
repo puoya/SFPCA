@@ -1,29 +1,16 @@
 # SFPCA
-Space Form Principal Component Analysis
+# Space Form Principal Component Analysis
+
+This is the Python implementation of SFPCA: 
+> **Principal Component Analysis in Space Froms**\
+> Puoya Tabaghi*, Michael Khanzadeh*, Yusu Wang*, Siavash Mirarab\
+> University of California San Diego\
+> Paper: 
+
 
 Refer to example.py for spherical and hyperbolic PCA examples on randonly generated data points.
 
-# HoroPCA
-
-This code is the official PyTorch implementation of the ICML 2021 paper: 
-
-> **HoroPCA: Hyperbolic Dimensionality Reduction via Horospherical Projections**\
-> Ines Chami*, Albert Gu*, Dat Nguyen*, Christopher Ré\
-> Stanford University\
-> Paper: https://arxiv.org/abs/2106.03306
-
-![HoroPCA](pga_horopca.png "HoroPCA")
-
-> **Abstract.** This paper studies Principal Component Analysis (PCA) for data lying in hyperbolic spaces. Given directions, PCA relies on: (1) a parameterization of subspaces spanned by these directions, (2) a method of projection onto subspaces that preserves information in these directions, and (3) an objective to optimize, namely the variance explained by projections. We generalize each of these concepts to the hyperbolic space and propose HoroPCA, a method for hyperbolic dimensionality reduction. By focusing on the core problem of extracting principal directions, HoroPCA theoretically better preserves information in the original data such as distances, compared to previous generalizations of PCA. Empirically, we validate that HoroPCA outperforms existing dimensionality reduction methods, significantly reducing error in distance preservation. As a data whitening method, it improves downstream classification by up to 3.9% compared to methods that don’t use whitening. Finally, we show that HoroPCA can be used to visualize hyperbolic data in two dimensions.
-
-The code has an implementation of the HoroPCA method, as well as other methods for dimensionality reduction on manifolds, such as Principal Geodesic Analysis and tangent Principal Component Analysis.  
-
-## Installation 
-
-This code was tested on Python3.7 and Pytorch 1.8.1. Start by installing the requirements: 
-```bash
-pip install -r requirements.txt
-```
+> **Abstract.** Principal component analysis (PCA) is a workhorse of modern data science. Practitioners typically perform PCA assuming the data conforms to Euclidean geometry. However, for specific data types, such as hierarchical data, other geometrical spaces may be more appropriate. We study PCA in space forms; that is, those with constant positive (spherical) and negative (hyperbolic) curvatures, in addition to zero-curvature (Euclidean) spaces. At any point on a Riemannian manifold, one can define a Riemannian affine subspace based on a set of tangent vectors and use invertible maps to project tangent vectors to the manifold and vice versa. Finding a low-dimensional affine subspace for a set of points in a space form amounts to dimensionality reduction because, as we show, any such affine subspace is isometric to a space form of the same dimension and curvature. To find principal components, we seek an affine subspace that best represents a set of manifold-valued data points with the minimum distortion after projecting each point onto the affine subspace. We propose specific cost functions that brings about two major benefits: (1) the affine subspace can be estimated by solving an eigenequation --- similar to that of Euclidean PCA, and (2) optimal affine subspaces of different dimensions form a nested set. These properties provide advances over existing comparable methods which are mostly iterative algorithms with slow convergence and weaker theoretical guarantees. Specifically for hyperbolic PCA, the associated eigenequation operates in the Lorentzian space, endowed with an indefinite inner product;  we thus establish a connection between hyperbolic and Euclidean eigenequations. We evaluate the proposed space form PCA (SFPCA) on data sets simulated in spherical and hyperbolic spaces and show that it outperforms alternative methods in convergence speed or accuracy, often both.
 
 
 ## Usage 
