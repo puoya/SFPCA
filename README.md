@@ -23,25 +23,37 @@ parameters:
   param.sigma           input noise level
 ```
 
+#### 1. Generate data points
+```
+X,S, noise_lvl_input = sfpca.random_hyperbolic_data(param) 
+# or
+X,S, noise_lvl_input = sfpca.random_spherical_data(param)
+```
 Outputs: 
 ```
-  X,S, noise_lvl_input = sfpca.random_hyperbolic_data(param) 
-  #or 
-  X,S, noise_lvl_input = sfpca.random_spherical_data(param)
-  
   X                     a (D+1) by N matrix of data points 
   S                     the subspace class: contains the base point, tangent subspace, and the slice-unitary matrix
   noise_lvl_input       average distance between noisy input data and the true subspace 
 ```
 
-#### 2. Run Euclidean PCA on the smalltree dataset:
+#### 2. Estimate affine subspace
 ```
-python main.py --dataset smalltree --model pca --dim 10 --n-components 2
+X_, S_ = sfpca.estimate_hyperbolic_subspace_pga(X,param)
+# or
+X_, S_ = sfpca.estimate_spherical_subspace_pga(X,param)
+```
+Outputs: 
+```
+  X_                     a (D+1) by N matrix of  projected data points
+  S_                     estimated subspace class: estimated base point, tangent subspace, and the slice-unitary matrix
+```
+#### 3. Compute output error
+```
+noise_lvl_output = sfpca.compute_noise_lvl(X_,S)
+# or
+noise_lvl_output = sfpca.compute_noise_lvl(X_,S)
 ```
 Output: 
 ```
-distortion: 	0.84 +- 0.00
-frechet_var:    0.34 +- 0.00
+  noise_lvl_output      average distance between projected data and the true subspace 
 ```
-
-
