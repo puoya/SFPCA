@@ -12,11 +12,7 @@ This is the Python implementation of SFPCA:
 ### Example
 
 Refer to example.py for spherical and hyperbolic PCA examples on randonly generated data points.
-self.N = 1000 ## number of points
-        self.D = 10 ## input dimension
-        self.d = 1 ## target dimension
-        self.sigma = .01 #
-        
+
 ```
 python3 main.py 
 
